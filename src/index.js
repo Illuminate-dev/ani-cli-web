@@ -2,6 +2,9 @@ $(function() {
     var term = $('#term').terminal({
         hello: function(name) {
             this.echo('Hello ' + name + '!');
+        },
+        "ani-cli": function(...args) {
+          
         }
     },
     {
@@ -14,6 +17,7 @@ $(function() {
             }
             return Promise.reject();
         },
+        checkArity: false,
     
     });
 });
